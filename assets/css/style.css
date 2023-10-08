@@ -307,7 +307,8 @@ a {
 }
 
 .feature .list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-top: 70px;
 }
@@ -592,7 +593,7 @@ a {
 }
 
 .footer .row-top {
-    gap: 185px;
+    column-gap: 185px;
 }
 
 .footer .heading {
@@ -655,4 +656,9 @@ a {
     color: #c2c2c2;
     font-size: 1.4rem;
     font-weight: 400;
+}
+
+.copyright-name {
+    text-decoration: underline;
+    color: #a1a1a1;
 }
